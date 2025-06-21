@@ -1,0 +1,13 @@
+x x x x x T x T x S S x x
+x T B x T x x x x T S x S
+x T x x T x T x x T S x S
+x T x x T x B x x T B S S
+x x x T B x T x x x x T T
+T T x x x S T S x x x x x
+x x x x x S S S T x x x x
+B T T x x S S S T T T T B
+B B x x T x S x T x B B B
+x T x x x T x T x x x x x
+x T x x x x x x x x x T S
+x x T x x T T T x x S S S
+x x T x x T O T x x T S S

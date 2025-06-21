@@ -1,0 +1,43 @@
+﻿<Window x:Class="BattleCity.WPF.LeaderboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BattleCity.WPF"
+        mc:Ignorable="d"
+               Title="Leaderboard" Height="400" Width="270"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>  <!--Prisposobi vyske obsahu -->    
+            <RowDefinition Height="*"/>     <!--Vsetko co mu ostava -->
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Nadpis -->
+        <Label Content="TOP 10 HRÁČOV" 
+               FontSize="20"
+               FontWeight="Bold"
+               HorizontalAlignment="Center"
+               Padding="10"/>
+
+        <!-- Zoznam -->
+        <ListView x:Name="ScoreListView" Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Por." Width="40" DisplayMemberBinding="{Binding Poradie}"/>
+                    <GridViewColumn Header="Meno" Width="120" DisplayMemberBinding="{Binding Meno}"/>
+                    <GridViewColumn Header="Skóre" Width="80" DisplayMemberBinding="{Binding Skore}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button Grid.Row="2" 
+                Content="Zavrieť" 
+                Width="100"
+                Margin="10"
+                HorizontalAlignment="Center"
+                Click="CloseButton_Click"/>
+    </Grid>
+</Window>

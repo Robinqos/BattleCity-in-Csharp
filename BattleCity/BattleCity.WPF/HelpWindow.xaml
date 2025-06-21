@@ -1,0 +1,109 @@
+﻿<Window x:Class="BattleCity.WPF.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BattleCity.WPF"
+        mc:Ignorable="d"
+                Title="Napoveda" Height="450" Width="600"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <ScrollViewer VerticalScrollBarVisibility="Auto" Background="LightBlue">
+        <StackPanel Margin="20">
+            <TextBlock Text="Battle City - Retro Arkádová Hra" 
+                       FontSize="28" 
+                       FontWeight="Bold"
+                       Margin="0,0,0,20"
+                       Foreground= "AntiqueWhite"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="O hre:" 
+                       FontSize="20" 
+                       FontWeight="Bold"/>
+            <TextBlock Text="Klasická 2D arkádovka inšpirovaná legendárnou hrou Battle City. Ovládaj svoj tank, bojuj proti nepriateľom a chráň svoju základňu!"
+                       Margin="10,5,0,15"
+                       TextWrapping="Wrap"/>
+
+            <TextBlock Text="Cieľ hry:" 
+                       FontSize="20" 
+                       FontWeight="Bold"/>
+            <TextBlock Text="1. Znič všetky nepriateľské tanky"
+                       Margin="10,5,0,5"/>
+            <TextBlock Text="2. Chráň ikonu orla pred zničením"
+                       Margin="10,0,0,15"/>
+
+            <TextBlock Text="Ovládanie:" 
+                       FontSize="20" 
+                       FontWeight="Bold"/>
+            <StackPanel Margin="10,5,0,15">
+                <TextBlock Text="● Pohyb: [←][↑][→][↓] / WASD"/>
+                <TextBlock Text="● Streľba: Medzerník"/>
+                <TextBlock Text="● Pauza: Kláves [P]"/>
+            </StackPanel>
+
+            <TextBlock Text="Špeciálne schopnosti:" 
+           FontSize="20" 
+           FontWeight="Bold"/>
+
+            <StackPanel Margin="10,5,0,15">
+                <!-- Ochrana orla -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <Image Source="/BattleCity.Library;component/resources/abilities/shovel.png" 
+               Width="32" 
+               Height="32"
+               Margin="0,0,10,0"/>
+                    <TextBlock Text="Ochrana orla - Na 12 sekúnd spevní steny okolo orla"
+                   VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Stit -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <Image Source="/BattleCity.Library;component/resources/abilities/helmet.png" 
+               Width="32" 
+               Height="32"
+               Margin="0,0,10,0"/>
+                    <TextBlock Text="Štít - Tank sa stáva na 12 sekúnd nezraniteľný"
+                   VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- +1hp -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <Image Source="/BattleCity.Library;component/resources/abilities/tank.png" 
+               Width="32" 
+               Height="32"
+               Margin="0,0,10,0"/>
+                    <TextBlock Text="Zvýšenie života - Pridá život tvojmu tanku"
+                   VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Vylepsenie dela -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <Image Source="/BattleCity.Library;component/resources/abilities/star.png" 
+               Width="32" 
+               Height="32"
+               Margin="0,0,10,0"/>
+                    <TextBlock Text="Vylepšenie dela - Zlepší vlastnosti dela"
+                   VerticalAlignment="Center"/>
+                </StackPanel>
+
+                <!-- Zastavenie casu -->
+                <StackPanel Orientation="Horizontal" Margin="0,5">
+                    <Image Source="/BattleCity.Library;component/resources/abilities/timer.png" 
+               Width="32" 
+               Height="32"
+               Margin="0,0,10,0"/>
+                    <TextBlock Text="Zastavenie času - Zamrazí všetky nepriateľské tanky na 8 sekúnd"
+                   VerticalAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+
+            <TextBlock Text="Vytvoril:" 
+                       FontSize="20" 
+                       FontWeight="Bold"
+                       Margin="0,15,0,0"/>
+            <TextBlock Text="(2025) / Robert Cedzo" 
+                       Margin="10,5,0,0"
+                       FontStyle="Italic"/>
+        </StackPanel>
+    </ScrollViewer>
+</Window>
